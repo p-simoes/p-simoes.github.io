@@ -34,10 +34,10 @@ body {
 
   @font-face {
       font-family: fa-solid-900;
-      src: url('../src/font-awesome-4.7.0/fonts/fontawesome-webfont.woff') format('woff'),
-           url('../src/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2') format('woff2'),
-           url('../src/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf') format('truetype'),
-           url('../src/font-awesome-4.7.0/fonts/fontawesome-webfont.svg') format('svg')
+      src: url('../src/fontawesome-free-5.14.0-web/webfonts/fa-regular-400.woff') format('woff'),
+           url('../src/fontawesome-free-5.14.0-web/webfonts/fa-regular-400.woff2') format('woff2'),
+           url('../src/fontawesome-free-5.14.0-web/webfonts/fa-regular-400.ttf') format('truetype'),
+           url('../src/fontawesome-free-5.14.0-web/webfonts/fa-regular-400.svg') format('svg')
   }
 
 .main {

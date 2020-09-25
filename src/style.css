@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: #fff;
+}
+
+@font-face {
+    font-family: Spartan;
+    src: url('../src/fonts/Spartan-Regular.ttf');
+  }
+
+@font-face {
+    font-family: Spartan-Light;
+    src: url('../src/fonts/Spartan-Light.ttf');
+  }
+
+@font-face {
+    font-family: Spartan-ExtraLight;
+    src: url('../src/fonts/Spartan-ExtraLight.ttf');
+  }
+
+  @font-face {
+    font-family: Spartan-Bold;
+    src: url('../src/fonts/Spartan-Bold.ttf');
+  }
+
+.main {
+    width: 100%;
+    overflow: hidden;
+}
+.main.darkMode {
+    background: #000;
+}
+
+.main.lightMode {
+    background: #CACACA;
+}
+
+.fa-code {
+    font-size: 20em;
+    position: fixed;
+    top: 10%;
+}
+
+.fa-code.darkMode {
+    opacity: 0.1;
+    left: 0;
+}
+
+.fa-code.lightMode {
+    opacity: 0.3;
+    right: 0;
+}
+
+
+.container {
+    max-width: 1170px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.left {
+    width: calc(1170px - 25%);
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left::after{
+    position: absolute;
+    width: 20px;
+    content: '';
+    top: -17px;
+    left: 100%;
+    transform: rotate(10deg);
+    height: 103vh;
+    animation-name: changeColor;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+
+.right {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.name {
+    text-align: left;
+    font-family: Spartan-Bold;
+    font-size: clamp(1rem, 1rem + 1vw, 2.5rem);
+    margin-bottom: 4%;
+}
+
+.name.darkMode {
+    color: #fff;
+}
+.name.lightMode {
+    color: #000;
+}
+
+.text.darkMode {
+    color: #fff;
+}
+.text.lightMode {
+    color: #000;
+}
+
+.light.lightMode {
+    box-shadow: 2px 2px 8px #A7A7A7;
+    background: #000;
+}
+
+.light.darkMode {
+    background: #fff;
+}
+
+.fa-github, .fa-linkedin-in, .fa-medium {
+    font-size: 2em;
+}
+
+.fa-github:hover {
+    color: #6e5494;
+    border-radius: 10px;
+}
+
+.fa-linkedin-in:hover {
+    color: #2867B2;
+    border-radius: 10px;
+}
+
+.fa-medium:hover {
+    color: #FFF71F;
+    border-radius: 10px;
+}
+
+.link .darkMode {
+    color: #fff;
+}
+
+.link .lightMode {
+    color: #000;
+}
+
+.fa-lightbulb {
+    font-size: 25px;
+    transform: translate(-20%, -20%);
+}
+
+.fa-lightbulb.darkMode {
+    color: #000;
+}
+.fa-lightbulb.lightMode {
+    color: #fff;
+}
+
+.text{
+    text-align: left;
+    font-family: Spartan-ExtraLight;
+    font-size: clamp(0.4rem, 0.4rem + 1vw, 1rem);
+    padding-right: 100px;
+}
+
+.photo {
+    max-width: 145px;
+    margin: 0 0 3%;
+}
+.jobs {
+    font-size: 1em;
+    text-align: right;
+    font-family: Spartan-Bold;
+    margin-top: 67%;
+    padding: 0 0 0 88px;
+}
+
+.jobs.darkMode {
+    color: #fff;
+}
+
+.jobs.lightMode {
+    color: #000;
+}
+
+.photo img {
+    width: 100%;
+}
+
+.photo.darkMode img {
+    filter: saturate(0);
+}
+.photo.lightMode img {
+    filter: saturate(1);
+}
+
+.list-links {
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    list-style: none;
+    width: 100%;
+}
+
+.link {
+    margin: 8% 4% 4% 4%;
+}
+
+.light {
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: 5%;
+    top: 90%;
+    border: none;
+    z-index: 9999;
+}
+
+@keyframes changeColor {
+    0% { background: #FFF71F; }
+    25%, 75% { background: #FF51BA;}
+    50% { background: #68E2FF; }
+    100% { background: #FFF71F; }
+  }
+
+@media (max-width: 580px) {
+
+    .left, .right {
+        height: 50vh;
+        width: 100%;
+    }
+
+    .left::after {
+    transform: rotate(100deg);
+    height: 120vh;
+    top: 0;
+    }
+
+    .text {
+        padding: 0;
+    }
+
+    .photo img {
+        width: 90%;
+    }
+
+    .jobs {
+        margin-top: 0;
+    }
+}

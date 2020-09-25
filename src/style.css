@@ -32,6 +32,14 @@ body {
     src: url('../src/fonts/Spartan-Bold.ttf');
   }
 
+  @font-face {
+      font-family: fa-solid-900;
+      src: url('../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff'),
+           url('../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2'),
+           url('../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf'),
+           url('../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg')
+  }
+
 .main {
     width: 100%;
     overflow: hidden;
@@ -132,6 +140,7 @@ body {
 }
 
 .fa-github, .fa-linkedin-in, .fa-medium {
+    font-family: fa-solid-900;
     font-size: 2em;
 }
 

@@ -1,0 +1,37 @@
+.main.lightMode {
+  background: #cacaca;
+}
+
+.fa-code.lightMode {
+  opacity: 0.3;
+  right: 0;
+}
+
+.name.lightMode {
+  color: #000;
+}
+
+.text.lightMode {
+  color: #000;
+}
+
+.lightButton.lightMode {
+  box-shadow: 2px 2px 8px #a7a7a7;
+  background: #000;
+}
+
+.link .lightMode {
+  color: #000;
+}
+
+.fa-lightbulb.lightMode {
+  color: #fff;
+}
+
+.jobs.lightMode {
+  color: #000;
+}
+
+.photo.lightMode img {
+  filter: saturate(1);
+}

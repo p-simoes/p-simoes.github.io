@@ -1,0 +1,32 @@
+.fa-code {
+  font-size: 20em;
+  position: fixed;
+  top: 10%;
+}
+
+.fa-github,
+.fa-linkedin-in,
+.fa-medium {
+  font-family: fa-solid-900;
+  font-size: 2em;
+}
+
+.fa-github:hover {
+  color: #6e5494;
+  border-radius: 10px;
+}
+
+.fa-linkedin-in:hover {
+  color: #2867b2;
+  border-radius: 10px;
+}
+
+.fa-medium:hover {
+  color: #fff71f;
+  border-radius: 10px;
+}
+
+.fa-lightbulb {
+  font-size: 25px;
+  transform: translate(-20%, -20%);
+}

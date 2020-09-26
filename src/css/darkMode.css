@@ -1,0 +1,36 @@
+.main.darkMode {
+  background: #000;
+}
+
+.fa-code.darkMode {
+  opacity: 0.1;
+  left: 0;
+}
+
+.name.darkMode {
+  color: #fff;
+}
+
+.text.darkMode {
+  color: #fff;
+}
+
+.lightButton.darkMode {
+  background: #fff;
+}
+
+.link .darkMode {
+  color: #fff;
+}
+
+.fa-lightbulb.darkMode {
+  color: #000;
+}
+
+.jobs.darkMode {
+  color: #fff;
+}
+
+.photo.darkMode img {
+  filter: saturate(0);
+}

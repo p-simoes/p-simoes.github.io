@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Spartan;
+  src: url("../src/fonts/Spartan-Regular.ttf");
+}
+
+@font-face {
+  font-family: Spartan-Light;
+  src: url("../src/fonts/Spartan-Light.ttf");
+}
+
+@font-face {
+  font-family: Spartan-ExtraLight;
+  src: url("../src/fonts/Spartan-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: Spartan-Bold;
+  src: url("../src/fonts/Spartan-Bold.ttf");
+}
+
+@font-face {
+  font-family: fa-solid-900;
+  src: url("../src/fontawesome-free-5.14.0-web/webfonts/fa-regular-400.woff")
+      format("woff"),
+    url("../src/fontawesome-free-5.14.0-web/webfonts/fa-regular-400.woff2")
+      format("woff2"),
+    url("../src/fontawesome-free-5.14.0-web/webfonts/fa-regular-400.ttf")
+      format("truetype"),
+    url("../src/fontawesome-free-5.14.0-web/webfonts/fa-regular-400.svg")
+      format("svg");
+}

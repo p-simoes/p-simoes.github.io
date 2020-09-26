@@ -1,0 +1,119 @@
+@import url("fonts.css");
+@import url("reset.css");
+@import url("icons.css");
+@import url("mediaqueries.css");
+@import url("darkMode.css");
+@import url("lightMode.css");
+
+.container {
+  max-width: 1170px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.left {
+  width: calc(1170px - 25%);
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left::after {
+  position: absolute;
+  width: 20px;
+  content: "";
+  top: -17px;
+  left: 100%;
+  transform: rotate(10deg);
+  height: 103vh;
+  animation-name: changeColor;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    background: #fff71f;
+  }
+  25%,
+  75% {
+    background: #ff51ba;
+  }
+  50% {
+    background: #68e2ff;
+  }
+  100% {
+    background: #fff71f;
+  }
+}
+
+.right {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.name {
+  text-align: left;
+  font-family: Spartan-Bold;
+  font-size: clamp(1rem, 1rem + 1vw, 2.5rem);
+  margin-bottom: 4%;
+}
+
+.text {
+  text-align: left;
+  font-family: Spartan-ExtraLight;
+  font-size: clamp(0.4rem, 0.4rem + 1vw, 1rem);
+  padding-right: 100px;
+}
+
+.photo {
+  max-width: 145px;
+  margin: 0 0 3%;
+}
+
+.jobs {
+  font-size: 1em;
+  text-align: right;
+  font-family: Spartan-Bold;
+  margin-top: 67%;
+  padding: 0 0 0 88px;
+}
+
+.photo img {
+  width: 100%;
+}
+
+.list-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  list-style: none;
+  width: 100%;
+}
+
+.link {
+  margin: 8% 4% 4% 4%;
+}
+
+.lightButton {
+  background-color: white;
+  position: absolute;
+  padding: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  right: 5%;
+  top: 90%;
+  border: none;
+  z-index: 9999;
+}
